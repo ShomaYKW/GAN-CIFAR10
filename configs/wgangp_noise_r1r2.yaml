@@ -1,0 +1,30 @@
+# Variant 3 (bonus): instance noise + gradient penalty on real & generated samples [3]
+name: wgangp_noise_r1r2
+seed: 0
+
+model:
+  z_dim: 128
+  g_ch: 256
+  d_ch: 128
+
+train:
+  batch_size: 128
+  train_iters: 100000
+  decay_iters: 100000
+  n_critic: 5
+  lr: 2.0e-4
+  betas: [0.0, 0.9]
+  num_workers: 4
+
+loss:
+  type: real_fake         # penalty on x_real and x_fake, no interpolates
+  lam: 10.0               # gamma in R1/R2
+  mode: zero              # zero: R1+R2 (||grad||->0) | one: (||grad||-1)^2
+  sigma0: 0.1             # instance noise std at it=0 (images in [-1,1])
+  anneal_iters: 50000     # sigma -> 0 linearly
+
+log:
+  log_every: 100
+  sample_every: 2000
+  ckpt_every: 10000
+  is_every: 10000

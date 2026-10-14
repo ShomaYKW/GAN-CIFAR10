@@ -1,0 +1,23 @@
+# data
+data/cifar-10-python.tar.gz
+data/cifar-10-batches-py/
+
+# outputs (checkpoints are ~100MB+ each)
+outputs/
+*.pt
+*.npz
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# env / IDE
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+
+# cache
+cache/
