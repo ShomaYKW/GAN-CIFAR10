@@ -25,7 +25,7 @@ Adam (α=2e-4, β₁=0, β₂=0.9) · λ=10 · n_critic=5 · LR decayed linearly
 
 ## Pipeline
 ```bash
-# 1. Train the Inception classifier (shared by all variants)
+# 1. Train the Inception classifier 
 python scripts/train_classifier.py
 
 # 2. Train the GANs
@@ -33,10 +33,9 @@ python scripts/train_gan.py --config configs/wgangp_g256_bs128.yaml
 python scripts/train_gan.py --config configs/wgangp_g128_bs256.yaml
 python scripts/train_gan.py --config configs/wgangp_noise_r1r2.yaml
 
-# 3. Evaluate: 100 samples, IS, FID (mean ± std)
+# 3. Evaluate: 100 samples
 python scripts/evaluate.py --variant <variant_name>
-
-# Or run everything
+# or run all at once
 bash scripts/run_all.sh
 ```
 
@@ -87,12 +86,6 @@ gan_cifar10/
 │   ├── train_gan.py                # step 2: --config <yaml>
 │   ├── evaluate.py                 # step 3: samples + IS + FID
 │   └── run_all.sh
-├── outputs/
-│   ├── classifier/                 # classifier weights
-│   └── <variant_name>/
-│       ├── checkpoints/
-│       ├── samples/                # 100-sample grid
-│       └── metrics.json            # IS, FID
 ├── requirements.txt
 └── README.md
 ```
