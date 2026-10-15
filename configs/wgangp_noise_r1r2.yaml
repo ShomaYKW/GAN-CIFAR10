@@ -17,11 +17,11 @@ train:
   num_workers: 4
 
 loss:
-  type: real_fake         # penalty on x_real and x_fake, no interpolates
-  lam: 10.0               # gamma in R1/R2
-  mode: zero              # zero: R1+R2 (||grad||->0) | one: (||grad||-1)^2
-  sigma0: 0.1             # instance noise std at it=0 (images in [-1,1])
-  anneal_iters: 50000     # sigma -> 0 linearly
+  type: real_fake         
+  lam: 10.0               
+  mode: zero              
+  sigma0: 0.1             
+  anneal_iters: 50000     
 
 log:
   log_every: 100

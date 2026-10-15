@@ -9,19 +9,19 @@ model:
 
 train:
   batch_size: 128
-  train_iters: 100000     # generator iterations (>= 50K required)
-  decay_iters: 100000     # LR -> 0 linearly over this many G iters
+  train_iters: 100000    
+  decay_iters: 100000    
   n_critic: 5
   lr: 2.0e-4
   betas: [0.0, 0.9]
   num_workers: 4
 
 loss:
-  type: wgan_gp           # interpolated GP
+  type: wgan_gp          
   lam: 10.0
 
 log:
   log_every: 100
   sample_every: 2000
   ckpt_every: 10000
-  is_every: 10000         # quick IS (5K samples) for monitoring; 0 = off
+  is_every: 10000        
