@@ -589,3 +589,11 @@
 [ 58200] w_dist 0.0537 gp 0.0221 sigma 0.0000 gnorm_real 0.0469 gnorm_fake 0.0463 loss_G 0.0988 lr 8.36e-05 | 12592s
 [ 58300] w_dist 0.0454 gp 0.0312 sigma 0.0000 gnorm_real 0.0550 gnorm_fake 0.0558 loss_G 0.0829 lr 8.34e-05 | 12613s
 [ 58400] w_dist 0.0347 gp 0.0243 sigma 0.0000 gnorm_real 0.0491 gnorm_fake 0.0486 loss_G 0.2443 lr 8.32e-05 | 12635s
+[ 58500] w_dist 0.0522 gp 0.0174 sigma 0.0000 gnorm_real 0.0415 gnorm_fake 0.0414 loss_G 0.2858 lr 8.30e-05 | 12657s
+[ 58600] w_dist 0.0382 gp 0.0254 sigma 0.0000 gnorm_real 0.0504 gnorm_fake 0.0496 loss_G 0.5219 lr 8.28e-05 | 12678s
+[ 58700] w_dist 0.0670 gp 0.0221 sigma 0.0000 gnorm_real 0.0465 gnorm_fake 0.0467 loss_G 0.4874 lr 8.26e-05 | 12700s
+[ 58800] w_dist 0.0540 gp 0.0265 sigma 0.0000 gnorm_real 0.0514 gnorm_fake 0.0508 loss_G 0.1178 lr 8.24e-05 | 12721s
+[ 58900] w_dist 0.0457 gp 0.0253 sigma 0.0000 gnorm_real 0.0498 gnorm_fake 0.0501 loss_G 0.2863 lr 8.22e-05 | 12743s
+[ 59000] w_dist 0.0678 gp 0.0226 sigma 0.0000 gnorm_real 0.0476 gnorm_fake 0.0466 loss_G 0.4610 lr 8.20e-05 | 12765s
+[ 59100] w_dist 0.0556 gp 0.0243 sigma 0.0000 gnorm_real 0.0497 gnorm_fake 0.0477 loss_G 0.3449 lr 8.18e-05 | 12786s
+[ 59200] w_dist 0.0393 gp 0.0288 sigma 0.0000 gnorm_real 0.0532 gnorm_fake 0.0532 loss_G -0.0078 lr 8.16e-05 | 12808s
