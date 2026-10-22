@@ -50,8 +50,9 @@ outputs/
 ```
 
 ## Metrics
-- **Inception Score:** exp(E_x[KL(p(y|x) ‖ p(y))]), computed on 50K samples over 10 splits and reported as mean ± std. Follows the OpenAI improved-gan protocol, with the custom CIFAR-10 classifier replacing Inception-v3.
-- **FID (bonus):** ‖μ_r − μ_g‖² + Tr(Σ_r + Σ_g − 2(Σ_r Σ_g)^{1/2}), computed on penultimate classifier features. Reported as mean ± std over repeated sample draws.
+- **samples** inside ~/gan_cifar10/outputs/<variant>/
+- **Inception Score:** ~/gan_cifar10/outputs/<variant>/
+- **FID (bonus):** ~/gan_cifar10/outputs/<variant>/
 
 ##folder structure
 # `gan_cifar10/`
@@ -89,13 +90,6 @@ gan_cifar10/
 ├── requirements.txt
 └── README.md
 ```
-
-## Results
-| Variant | IS ↑ | FID ↓ |
-|---|---|---|
-| G256, bs128 | – | – |
-| G128, bs256 | – | – |
-| Noise + real/fake GP | – | – |
 
 ## References
 [2] Gulrajani et al., *Improved Training of Wasserstein GANs*, 2017.
